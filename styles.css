@@ -8,13 +8,16 @@ body {
 .header {
     border: 1px solid black;
     width: 100vw;
-    margin: 1em;
+    height: 4em;
+    margin: 1em 2em 0em 0em;
+	overflow: hidden;
 }
 
 .item {
     /*border: 1px solid black;*/
     padding: 20px;
     float: left;
+    display: block;
 }
 
 .item-1 {
@@ -31,17 +34,22 @@ body {
     width: 41%;
     height: 80vh;
     float: left;
+   	flex-basis: auto;
+   	flex-grow: 2;
 }
 
 .right-content {
 	display: flex;
 	flex-direction: column;
+	flex-basis: auto;
+	flex-grow: 1;
     border: 1px solid black;
-    margin: 1em;
-    padding: 1em;
-    width: 55%;
+    margin-right:0em;
+    padding: 1.5em 2em;
+    width: 59%;
     height: auto;
     float: left;
+    
 }
 
 .top-right {
@@ -97,7 +105,7 @@ p {
 }
 
 a.icon {
-    color: orange;
+    color: #881b1b;
 }
 
 footer {
@@ -135,13 +143,13 @@ a#footer.button {
     }
 }
 /* tablet landscape */
-@media screen and (max-width:780px) (orientation:landscape) {
+@media screen and (max-width:800px) (orientation:landscape) {
     .container {
         flex-direction: row;
     }
 }
 /*tablet portrait*/
-@media screen and (max-width:500px) (orientation:portrait) {
+@media screen and (max-width:800px) (orientation:portrait) {
     .container {
         flex-direction: column;
     }
